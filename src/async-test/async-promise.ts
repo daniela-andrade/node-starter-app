@@ -47,8 +47,9 @@ const getTextUtilPromisified = async (path: string) => {
 }
 getTextUtilPromisified(path.resolve(__dirname, './data.txt'))
 
-// Another even easier way is to import 
-const readFilePromise = require("fs").promises.readFile
+// Another even easier way is to import
+import fs from "fs"
+const readFilePromise = fs.promises.readFile
 const getTextFSPromises = async (path: string) => {
     try {
         const data = await readFilePromise(path, 'utf-8')
