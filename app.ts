@@ -23,3 +23,6 @@ server.listen(8080)
 
 // // testing event emmiter
 // require('./event-test/event')
+
+// // testing streams
+// require('./streams-test/streams')
