@@ -5,10 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "build": "tsc",
-    "prestart": "npm run build",
-    "start": "node .",
-    "dev": "nodemon ."
+    "dev": "nodemon --config nodemon.json src/app.ts"
   },
   "author": "danielaandrade93",
   "license": "ISC",

@@ -1,0 +1,39 @@
+.form {
+    width: 90vw;
+    max-width: var(--fixed-width);
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-2);
+    padding: 2rem 2.5rem;
+    margin: 3rem auto;
+}
+
+.form-label {
+    display: block; /* want to start in a new line */
+    font-size: var(--smallText);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+    background: var(--backgroundColor);
+    border: 1px solid var(--grey-300);
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.form-textarea {
+    height: 7rem;
+}
+
+.form-alert {
+    color: var(--red-dark);
+    letter-spacing: var(--letter-spacing);
+    text-transform: capitalize;
+}

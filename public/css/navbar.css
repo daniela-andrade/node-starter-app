@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--grey-300);
+    margin-bottom: 2rem;
+}
+
+.nav-center {
+    width: 100%;
+}
+
+.nav-header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between; /* push the elements to each edge of the element */
+    align-items: center; /* align center vertically */
+}
+
+.nav-header img {
+    width: 200px;
+}
+
+.nav-logo {
+    /* so the logo is centered with the burger menu icon*/
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column; /* links stacked on top of each other */
+    /* for the toggle button transitions */
+    height: 0;
+    overflow: hidden;
+    transition: var(--trasition);
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--grey-900);
+    letter-spacing: var(--letter-spacing);
+    padding: 1rem 0;
+    border-top: 2px solid var(--grey-300);
+}
+
+.show-links {
+    height: auto;
+}
+
+.nav-btn {
+    padding: 0.75rem 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu-icon {
+    max-width: 20px;
+    max-height: 15px;
+}
+
+/* for larger screens */
+
+
+@media screen and (min-width: 1000px) {
+    .nav-btn {
+        display: none;
+    }
+
+    .navbar{
+        height: 6rem;
+    }
+
+
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .nav-link {
+        padding: 0 1rem;
+        border-top: 0;
+    }
+
+}

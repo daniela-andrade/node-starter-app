@@ -1,0 +1,145 @@
+*,::after,::before{
+    box-sizing: border-box /* Padding wont increase elements' size */
+}
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|JetBrains+Mono:400');
+
+html {font-size: 100%;} /*16px*/
+
+:root{
+    /* colors */
+    /* palette */
+    --dark-purple: #320a28ff;
+    --tyrian-purple: #511730ff;
+    --nyanza: #e4fde1ff;
+    --tan: #d3b99fff;
+
+    /* primary steel-teal */
+    --primary-100: #dde8e8;
+    --primary-200: #bbd1d1;
+    --primary-300: #99baba;
+    --primary-400: #77a3a3;
+    --primary-500: #558c8cff;
+    --primary-600: #447070;    
+    --primary-700: #335454;
+    --primary-800: #223838;
+    --primary-900: #111c1c;
+
+    /* grey */
+    --grey-50:  #fafaf9;
+    --grey-100: #f5f5f4;
+    --grey-200: #e7e5e4;
+    --grey-300: #d6d3d1;
+    --grey-400: #a8a29e;
+    --grey-500: #78716c;
+    --grey-600: #57534e;
+    --grey-700: #44403c;
+    --grey-800: #292524;
+    --grey-900: #1c1917;
+
+    --black: #222;
+    --white: #fff;
+    --red-light: #f8d7da;
+    --red-dark: #842029;
+    --green-light: #d1e7dd;
+    --green-dark: #0f5132;
+
+
+    --backgroundColor: var(--grey-100);
+    --textColor: var(--grey-900);
+
+    /* fonts */
+    --headingFont: 'JetBrains Mono', monospace;
+    --bodyFont: 'IBM Plex Mono', monospace;
+    --smallText: 0.7em;
+
+    --border-radius: 0.25rem;
+    --letter-spacing: 1px;
+    --trasition: 0.3s ease-in-out all;
+    --max-width: 1120px;
+    --fixed-width: 600px;
+    --padding-small: 0.375rem 0.75rem;
+
+    /* boxshadow */
+    --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+  padding: 2rem 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    max-width: 40em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  color: var(--primary-500);
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text-small {font-size: var(--smallText);}
+
+a {
+    text-decoration: none;
+    color: var(--primary-500);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    width: 50vw; /* 40% of the screen width */
+    border: 5px solid var(--primary-500);
+    border-radius: var(--border-radius);
+    max-width: var(--max-width);
+}
+
+.img {
+    width: 100%;
+    display: block; /* prevents white space in the bottom */
+    object-fit: cover; /* keeps aspect ration if height is modified */
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+::placeholder {
+    font-family: inherit;
+    color: var(--grey-400);
+}
